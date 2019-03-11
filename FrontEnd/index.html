@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./assets/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/index.css"/>
+
+    <title>Snail Escape</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Snail Escape</h1>
+      <button onclick="RandomScenario()">Generate Scenario</button>
+    </header>
+
+
+    <!------------------------------------------------------>
+    <!--                  INPUT SECTION                  --->
+    <!------------------------------------------------------>
+    <section class="inputSection">
+      <form id="snailForm" name="snailForm">
+        <fieldset class="formItemsContainer">
+          <legend>Snail Escape!</legend>
+
+          <!-- WELL HEIGHT -->
+          <label class="formItem">
+            How high is the well?
+            <input type="tel" maxlength="3" pattern="[0-9]" name="wellHeight" id="wellHeight"/>ft
+          </label>
+
+          <!-- CLIMB DISTANCE -->
+          <label class="formItem">
+            How far can the snail climb during the day?
+            <input type="tel" maxlength="3" pattern="[0-9]" name="climbDist" id="climbDist"/>ft
+          </label>
+
+          <!-- FALL DISTANCE -->
+          <label class="formItem">
+            How far does the snail slide down during the night?
+            <input type="tel" maxlength="3" pattern="[0-9]" name="fallDist" id="fallDist"/>ft
+          </label>
+
+          <label class="formItem">
+            What is the percentage of fatigue?
+            <input type="tel" maxlength="3" pattern="[0-9]" name="fatiguePerc" id="fatiguePerc"/>%
+          </label>
+
+          <button onclick="GetFormData()" class="formButton" type="button">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+
+
+    <!------------------------------------------------------>
+    <!--                  OUTPUT SECTION                 --->
+    <!------------------------------------------------------>
+    <section class="outputSection">
+      <table id="resultTable">
+        <tr class="resultRow">
+          <th>H</th>
+          <th>U</th>
+          <th>D</th>
+          <th>F</th>
+          <th>Result</th>
+        </tr>
+      </table>
+    </section>
+
+
+    <script src="./assets/snail-problem.js"></script>
+  </body>
+</html>

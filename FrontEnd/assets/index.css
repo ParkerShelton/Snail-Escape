@@ -1,0 +1,130 @@
+html {
+  padding: none;
+  margin: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #97ACC9;
+}
+
+table, th, td {
+  border: 2px solid #69626D;
+  border-collapse: collapse;
+}
+
+
+/*--------------------------------------------------------*/
+/*                        HEADER                          */
+/*--------------------------------------------------------*/
+header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 3px solid #56515A;
+  background-color: #5C6784;
+}
+  header > h1 {
+    align-self: center;
+    font-size: 30px;
+    color: #C9CAD9;
+  }
+  header > button {
+    width: 100px;
+    height: 45px;
+    padding: 5px;
+    align-self: center;
+    border-radius: 5px;
+    border: 2px solid #56515A;
+    font-weight: bold;
+    font-size: 13px;
+    background-color: #C9CAD9;
+    color: #56515A;
+  }
+
+
+/*--------------------------------------------------------*/
+/*                    INPUT SECTION                       */
+/*--------------------------------------------------------*/
+.inputSection {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #C9CAD9;
+  border: 3px solid #69626D;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+  .inputSection > #snailForm {
+    display: flex;
+    width: 100%;
+  }
+    #snailForm > .formItemsContainer {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+      .formItemsContainer > legend {
+        font-size: 25px;
+        text-decoration: underline;
+        text-decoration-color: #56515A;
+        color: #56515A;
+      }
+      .formItemsContainer > .formItem {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        color: #56515A;
+      }
+        .formItem > input {
+          margin-left: auto;
+          margin-right: 5px;
+        }
+      .formItemsContainer > .formButton {
+        margin: auto;
+        margin-top: 20px;
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border: 2px solid #56515A;
+        font-weight: bold;
+        font-size: 13px;
+        background-color: #E1E2EA;
+        color: #56515A
+      }
+
+
+/*--------------------------------------------------------*/
+/*                    OUTPUT SECTION                      */
+/*--------------------------------------------------------*/
+.outputSection {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #C9CAD9;
+  color: #56515A;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+}
+  .outputSection > #resultTable {
+    width: 100%;
+    /* background-color: blue; */
+  }
+    #resultTable > tr {
+      display: flex;
+      width: 100%;
+      background-color: yellow;
+    }
+      tr > td {
+        width: 12%;
+        /* height: 30px; */
+        padding: 5px;
+        font-size: 18px;
+        text-align: center;
+      }
+
+      tr > td:nth-last-of-type(1) {
+        width: 52%;
+      }
